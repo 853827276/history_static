@@ -14,10 +14,10 @@
 <body>
 	<!-- 导航 -->
 	<ul class="layui-nav">
-		<li class="layui-nav-item layui-col-md7"><a href="">LOGO</a></li>
+		<li class="layui-nav-item layui-col-md7"><a href="">中国当代史口述历史档案</a></li>
 		<li class="layui-nav-item layui-col-md1"><a href="">首页</a></li>
 		<li class="layui-nav-item layui-col-md1"><a href="">资料库</a></li>
-		<li class="layui-nav-item layui-col-md1"><a href="">新闻动态</a></li>
+		<li class="layui-nav-item layui-col-md1"><a href="#newsDy">新闻动态</a></li>
 		<li class="layui-nav-item layui-col-md1"><a href="#latestNews">最新留言<span class="layui-badge">9</span></a></li>
 		<li class="layui-nav-item" lay-unselect="">
 			<a href="javascript:;"><img src="./imgs/phone.jpg" class="layui-nav-img">注册</a>
@@ -41,9 +41,35 @@
 			</div>
 		</div>
 	</div>
+	<!-- 新闻动态 -->
+	<p class="layui-elem-quote">
+		<a class="layui-btn layui-btn-normal" id="newsDy">新闻动态</a>
+	</p>
+	<ul class="layui-timeline">
+		<li class="layui-timeline-item"><i
+			class="layui-icon layui-timeline-axis"></i>
+			<div class="layui-timeline-content layui-text">
+				<div class="layui-timeline-title">至今 我仍在创业的大路上奔跑</div>
+			</div></li>
+		<li class="layui-timeline-item"><i
+			class="layui-icon layui-timeline-axis"></i>
+			<div class="layui-timeline-content layui-text">
+				<div class="layui-timeline-title">2016年 我开始创业</div>
+			</div></li>
+		<li class="layui-timeline-item"><i
+			class="layui-icon layui-timeline-axis"></i>
+			<div class="layui-timeline-content layui-text">
+				<div class="layui-timeline-title">2015年 我成功的加入BAT,成为了一名蓝领</div>
+			</div></li>
+		<li class="layui-timeline-item"><i
+			class="layui-icon layui-anim layui-anim-rotate layui-anim-loop layui-timeline-axis"></i>
+			<div class="layui-timeline-content layui-text">
+				<div class="layui-timeline-title">2011年 刚开始思考人生</div>
+			</div></li>
+	</ul>
 	<!-- 	最近留言 -->
 	<p class="layui-elem-quote">
-		<a class="layui-btn layui-btn-normal">最近留言</a>
+		<a class="layui-btn layui-btn-normal">最近留言</a><a class="layui-btn layui-btn-normal" style="float: right;">查看更多</a>
 	</p>
 	<table class="layui-table" lay-even="" lay-skin="row" id="latestNews">
 		<colgroup>
