@@ -18,7 +18,7 @@
 		<li class="layui-nav-item layui-col-md1"><a href="">首页</a></li>
 		<li class="layui-nav-item layui-col-md1"><a href="">资料库</a></li>
 		<li class="layui-nav-item layui-col-md1"><a href="">新闻动态</a></li>
-		<li class="layui-nav-item layui-col-md1"><a href="">最新留言<span class="layui-badge">9</span></a></li>
+		<li class="layui-nav-item layui-col-md1"><a href="#latestNews">最新留言<span class="layui-badge">9</span></a></li>
 		<li class="layui-nav-item" lay-unselect="">
 			<a href="javascript:;"><img src="./imgs/phone.jpg" class="layui-nav-img">注册</a>
 			<dl class="layui-nav-child">
@@ -41,36 +41,105 @@
 			</div>
 		</div>
 	</div>
-	<!-- 	最新资料 -->
-	<div class="content">
-		<p class="layui-elem-quote"><a class="layui-btn layui-btn-normal">欢迎留言</a></p>  
-		<form class="layui-form" action="" style="margin-top: 10px;">
-			<div class="layui-form-item">
-				<label class="layui-form-label">您的姓名:</label>
-				<div class="layui-input-block">
-					<input type="text" name="username" lay-verify="title"
-						autocomplete="off" placeholder="请输入您的姓名" class="layui-input">
-				</div>
+	<!-- 	最近留言 -->
+	<p class="layui-elem-quote">
+		<a class="layui-btn layui-btn-normal">最近留言</a>
+	</p>
+	<table class="layui-table" lay-even="" lay-skin="row" id="latestNews">
+		<colgroup>
+			<col width="100">
+			<col width="100">
+			<col width="100">
+			<col>
+			<col width="200">
+			<col width="200">
+		</colgroup>
+		<thead>
+			<tr>
+				<th>姓名</th>
+				<th>手机</th>
+				<th>性别</th>
+				<th>内容</th>
+				<th>时间</th>
+				<th>评价</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>李白</td>
+				<td>18888888888</td>
+				<td>男</td>
+				<td>曾经也会有许多种想法，想要学习李白，想要成为张小娴，想着也许会阳光明媚的过这一生，可惜，那时候年轻到连想法都天马行空，这一辈子太久了，久到80集的电视连续剧都播放不完，又怎么做到像李白一样满腹经纶，又怎么成为张小娴一样看透所有的爱情。所以，这20多年以来，还是依然在车水马龙人潮拥挤的城市里浮沉。</td>
+				<td>2018-07-05 12:12:12</td>
+				<td><span class='pingfen'></span></td>
+			</tr>
+			<tr>
+				<td>杜甫</td>
+				<td>1666666666</td>
+				<td>男</td>
+				<td>人生似修行</td>
+				<td>2018-07-05 12:12:12</td>
+				<td><span class='pingfen'></span></td>
+			</tr>
+			<tr>
+				<td>王之涣</td>
+				<td>18888888888</td>
+				<td>男</td>
+				<td>曾经也会有许多种想法，想要学习李白，想要成为张小娴，想着也许会阳光明媚的过这一生，可惜，那时候年轻到连想法都天马行空，这一辈子太久了，久到80集的电视连续剧都播放不完，又怎么做到像李白一样满腹经纶，又怎么成为张小娴一样看透所有的爱情。所以，这20多年以来，还是依然在车水马龙人潮拥挤的城市里浮沉。</td>
+				<td>2018-07-05 12:12:12</td>
+				<td><span class='pingfen'></span></td>
+			</tr>
+		</tbody>
+	</table>
+	<!-- 欢迎留言 -->
+	<p class="layui-elem-quote"><a class="layui-btn layui-btn-normal">欢迎留言</a></p>  
+	<form class="layui-form" action="" style="margin-top: 10px;">
+		<div class="layui-form-item">
+			<label class="layui-form-label">您的姓名:</label>
+			<div class="layui-input-block">
+				<input type="text" name="username" lay-verify="title"
+					autocomplete="off" placeholder="请输入您的姓名" class="layui-input">
 			</div>
-			<div class="layui-form-item">
-				<label class="layui-form-label">您的手机:</label>
-				<div class="layui-input-block">
-					<input type="text" name="password" lay-verify="required"
-						placeholder="请输入您的手机" autocomplete="off" class="layui-input">
-				</div>
+		</div>
+		<div class="layui-form-item">
+			<label class="layui-form-label">您的手机:</label>
+			<div class="layui-input-block">
+				<input type="text" name="password" lay-verify="required"
+					placeholder="请输入您的手机" autocomplete="off" class="layui-input">
 			</div>
-			<div class="layui-form-item layui-form-text">
-				<label class="layui-form-label">您的留言:</label>
-				<div class="layui-input-block">
-					<textarea placeholder="请输入您的留言内容" class="layui-textarea"></textarea>
-				</div>
+		</div>
+		<div class="layui-form-item">
+			<label class="layui-form-label">您的邮箱:</label>
+			<div class="layui-input-block">
+				<input type="text" name="password" lay-verify="required"
+					placeholder="请输入您的邮箱" autocomplete="off" class="layui-input">
 			</div>
-			<div class="layui-form-item" style="margin-left: 5.8%;">
-				<button class="layui-btn">提交</button>
-				<button class="layui-btn">重填</button>
+		</div>
+		<div class="layui-form-item">
+			<label class="layui-form-label">您的性别</label>
+			<div class="layui-input-block">
+				<input type="radio" name="sex" value="男" title="男" checked="">
+				<input type="radio" name="sex" value="女" title="女"> 
 			</div>
-		</form>
-	</div>
+		</div>
+		
+		<div class="layui-form-item">
+			<label class="layui-form-label">您的评价</label>
+			<div class="layui-input-block">
+				<div id="pingfen"></div>
+			</div>
+		</div>
+		<div class="layui-form-item layui-form-text">
+			<label class="layui-form-label">您的留言:</label>
+			<div class="layui-input-block">
+				<textarea placeholder="请输入您的留言内容" class="layui-textarea"></textarea>
+			</div>
+		</div>
+		<div class="layui-form-item" style="margin-left: 5.8%;">
+			<button class="layui-btn">提交</button>
+			<button class="layui-btn">重填</button>
+		</div>
+	</form>
 	<div class="content">
 	<p class="layui-elem-quote"><a class="layui-btn layui-btn-normal">我的位置</a></p>
 		<div id="map" class="map"></div>
@@ -179,6 +248,12 @@
 				scrollbar : false
 			});
 		});
+		//评分
+		  //基础效果
+		  layui.rate.render({
+		    elem: '.pingfen',
+		    value:2
+		  })
 	});
 </script>	
 </body>
