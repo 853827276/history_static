@@ -1,0 +1,44 @@
+/* 公共的css */
+@CHARSET "UTF-8";
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	width: 100%;
+	height: auto;
+	background: #eaedf1;
+}
+
+.content{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin: 2px auto;
+}
+.content .center{
+/* 	text-align: center; */
+	min-height: 50px;
+}
+.loginDiv{
+	text-align: center;
+}
+.content .map{
+	height: 800px;
+	width: 100%;
+	box-sizing: border-box;
+/* 	display: none; */
+}
+.copyRight{
+	color: #00FF00;
+	width: 100%;
+	height: 100px;
+	background-color: #1e5000;
+	text-align: center;
+}
+.copyRight p{
+	height: 50px;
+	line-height: 50px;
+}
